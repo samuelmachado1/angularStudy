@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { sample } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  userData = {
+    email: "smachado@sample.com.br",
+    job: 'Developer'
+  }
+  userName: string = 'Sam';
   title = 'memories';
 }
