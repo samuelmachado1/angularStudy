@@ -1,12 +1,16 @@
 <div class="class">
   <h1>  Hello Rasta! </h1>
 </div>
-<app-first-component></app-first-component>
-<app-parent-component [name]="userName" [userData]="userData"></app-parent-component>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<nav>
+  <a routerLink="/">Home |</a>
+  <a routerLink="/list"> Lista |</a>
+  <a routerLink="/page1"> ParentComponent | </a>
+  <a routerLink="/page2"> Diretivas | </a>
+  <a routerLink="/page3"> IF Render | </a>
+  <a routerLink="/page4"> Eventos | </a>
+  <a routerLink="/page5"> Emitter | </a>
+  <a routerLink="/page6"> Pipes | </a>
+  <a routerLink="/page7"> Two Way</a>
+  
+</nav>
+<router-outlet></router-outlet>
